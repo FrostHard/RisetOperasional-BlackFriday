@@ -17,9 +17,3 @@ customers_products = BlackFriday %>%
   mutate(id = row_number()) %>%     # Defining a key column for each "Product_ID" and its corresponding "User_ID" (Must do this for spread() to work properly)
   spread(User_ID, Product_ID) %>%   # Converting our dataset from tall to wide format, and grouping "Product_IDs" to their corresponding "User_ID"
   t()                               # Transposing the dataset from columns of "User_ID" to rows of "User_ID"
-
-# Now we can remove the Id row we created earlier for spread() to work correctly.
-customers_products = customers_products[-1,]
-
-write.csv(customers_products, file = 'customers_products.csv')
-customersProducts = read.transactions('customers_products.csv', sep = ',', rm.duplicates = TRUE) # remove duplicates with rm.duplicates
