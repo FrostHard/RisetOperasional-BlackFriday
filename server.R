@@ -13,10 +13,9 @@ server <- function(input, output) {
     }
     if(input$Plot == "Purchase"){
       BlackFridayPurchase = BlackFriday %>% select(User_ID, Purchase) %>% group_by(User_ID) %>% summarise(Purchase_Amount = sum(Purchase))
-      Top_Buyer <- head(BlackFridayPurchase, 6)
+      Top_Buyer <- head(BlackFridayPurchase, input$User)
       Best_User <- Top_Buyer %>% ggplot(aes(x = User_ID, y = Purchase_Amount, fill = User_ID)) + geom_col() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5), legend.position = "none")
-      #print(Best_User)
-      print(BlackFridayPurchase)
+      print(Best_User)
     }
     if(input$Plot == "Gender"){
       if(input$Gender == "Summary All"){
