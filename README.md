@@ -5,8 +5,8 @@ Repository untuk Project Riset Operasional
 We use Machine Learning Apriori to predict costumer transactions, In other words, the algorithm solves the problem, "People who bought 'Product A' also bought 'Product B' ."
 
 ### Prerequisites
-- R-3.5.3 (latest)
-- RStudio 1.2.1335
+- [R-3.5.3](https://cran.r-project.org/bin/windows/base/) (latest)
+- [RStudio 1.2.1335](https://www.rstudio.com/products/rstudio/download/)
 
 ### Required R Packages (case-sensitive)
 - shiny
