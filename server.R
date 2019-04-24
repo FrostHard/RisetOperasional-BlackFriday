@@ -5,12 +5,17 @@ server <- function(input, output) {
     rules <- apriori(data = customersProducts, parameter = list(support = input$Support, confidence = input$Confidence, maxtime = 0)) # maxtime = 0 will allow our algorithim to run until completion with no time limit
   })
   output$distPlot <- renderPlot({
-    
     if(input$Plot == "Purchase"){
       BlackFridayPurchase = BlackFriday %>% select(User_ID, Purchase) %>% group_by(User_ID) %>% summarise(Purchase_Amount = sum(Purchase))
       Top_Buyer <- head(BlackFridayPurchase, input$User)
       Best_User <- Top_Buyer %>% ggplot(aes(x = User_ID, y = Purchase_Amount, fill = User_ID)) + geom_col() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5), legend.position = "none")
       print(Best_User)
+    }
+    if(input$Plot == "Top Product"){
+      BlackFridayTopProd <- BlackFriday %>% group_by(Product_ID) %>% count() %>% arrange(desc(n))
+      Top_Product <- head(BlackFridayTopProd, input$Product)
+      Best_Prod <- Top_Product %>% ggplot(aes(x=reorder(Product_ID,n),y=n))+geom_col()+theme(axis.text.x = element_text(angle=90,vjust=0.5),legend.position = "none") + scale_fill_brewer(palette = 'PuBuGn')
+      print(Best_Prod)
     }
     if(input$Plot == "Gender"){
       if(input$Gender == "Summary All"){
