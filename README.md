@@ -21,5 +21,14 @@ We will be using Apriori algorithm to predict costumer transactions, In other wo
 
 ## Into Association Rules and *Apriori* algorithm
 
+## Installing
+1. Download all files and put them in the same folder
+2. Download all the required R packages
+3. Open server.R, data1.R, and ui.R on RStudio
+4. Click Run App 
+
+## Program Features
+### Data Exploration
+
 References:
 [***Black Friday Examined (EDA + Apriori)***](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
