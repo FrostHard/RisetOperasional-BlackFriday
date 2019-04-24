@@ -32,5 +32,19 @@ We will be using Apriori algorithm to predict costumer transactions, In other wo
 ### Data Exploration
 ![](GIFFolder/GIFDatExplore.gif)  
 Simply click on "Select Plot" to open the dropdown menu and change the plot. The values of the plot can be changed using the bottom-most slider.
+
+### Prediction Table
+![](GIFFolder/GIFPredTable.gif)
+Modifies the confidence for the tables.
+
+![](GIFFolder/GIFPredTableSupp.gif)
+Modifies the support for the tables.
+
+## Grouped
+![](GIFFolder/GIFGroupedConf.gif)
+
+![](GIFFolder/GIFGroupedSupp.gif)
+
 References:
 [***Black Friday Examined (EDA + Apriori)***](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
+
