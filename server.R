@@ -1,5 +1,5 @@
 source("data1.R")
-gftyutg,iklotglokihyl.o;
+
 server <- function(input, output) {
   reacRule <- reactive({
     rules <- apriori(data = customersProducts, parameter = list(support = input$Support, confidence = input$Confidence, maxtime = 0)) # maxtime = 0 will allow our algorithim to run until completion with no time limit
