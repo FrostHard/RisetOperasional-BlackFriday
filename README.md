@@ -26,10 +26,11 @@ We will be using Apriori algorithm to predict costumer transactions, In other wo
 2. Download all the required R packages
 3. Open server.R, data1.R, and ui.R on RStudio
 4. Click Run App 
-![](GIFFolder/GIFInstall.gif)
+![](GIFFolder/GIFInstall.gif)  
 
 ## Program Features
 ### Data Exploration
 ![](GIFFolder/GIFDatExplore.gif)  
+Simply click on "Select Plot" to open the dropdown menu and change the plot. The values of the plot can be changed using the bottom-most slider.
 References:
 [***Black Friday Examined (EDA + Apriori)***](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
