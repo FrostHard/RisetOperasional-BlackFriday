@@ -63,8 +63,8 @@ Modifies the support for the tables.
 
 Authors:
 - Farrell Nathaniel (01082170002)
-- Ferinzhy Halik
-- Grand Marcell (01082170016
+- Ferinzhy Halik (01082170035)
+- Grand Marcell (01082170016)
 
 References:
 [Black Friday Examined (EDA + Apriori)](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
