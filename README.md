@@ -20,6 +20,9 @@ We will be using Apriori algorithm to predict costumer transactions, In other wo
 - scales
 
 ## Into Association Rules and *Apriori* algorithm
+Association Rules is a technique to uncover how items are associated to each other. Three ways to measure association:
+1. Support: Says how popular an itemset is. 
+![](https://annalyzin.files.wordpress.com/2016/04/association-rule-support-table.png?w=503&h=447)
 
 ## Installing
 1. Download all files and put them in the same folder
