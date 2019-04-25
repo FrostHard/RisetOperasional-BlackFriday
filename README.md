@@ -15,7 +15,6 @@ We will be using Apriori algorithm to predict costumer transactions, In other wo
 - GGally
 - stringr
 - shinythemes
-- gridExtra
 - arules
 - scales
 
