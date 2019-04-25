@@ -40,6 +40,11 @@ ui <- fluidPage(
                        selectInput("City", "Which City",
                                    choices = c("All", "Product City A", "Product City B", "Product City C"))
       ),
+      conditionalPanel(condition ="input.Plot == 'Stay in City'",
+                       # Input : select input the type
+                       selectInput("StayCity", "Which Category",
+                                   choices = c("All", "City A", "City B", "City C"))
+      ),
       conditionalPanel(condition ="input.Plot == 'City Category'",
                        # Input : select input the type
                        selectInput("MarStatus", "Which Type",
@@ -61,7 +66,7 @@ ui <- fluidPage(
                        # Input : select input the type
                        selectInput("ProCatGen", "Which Category",
                                    choices = c("Category 1", "Category 2", "Category 3"))
-      ),
+      )
       
     ),
     # Main panel for displaying outputs ----
