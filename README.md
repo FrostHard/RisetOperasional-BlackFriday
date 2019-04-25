@@ -25,11 +25,17 @@ Association Rules is a technique to uncover how items are associated to each oth
 
 Support formula: (A + B) / Total
 
-2. Confidence: An indication on how often the rule is true.
+tl;dr A fraction of all transactions that contain both A and B.
+
+2. Confidence: An indication on how often the rule is true. It's the ratio of the purchases that contains A and B, to the transactions that contains A.
 
 Confidence formula: (A + B) / A
 
-3. Lift: This says how likely item Y is purchased when item X is purchased, while controlling for how popular item Y is. In Table 1, the lift of {apple -> beer} is 1,which implies no association between items. A lift value greater than 1 means that item Y is likely to be bought if item X is bought, while a value less than 1 means that item Y is unlikely to be bought if item X is bought.
+tl;dr How often B appears in transactions that only contain A.
+
+3. Lift: Ratio of confidence to *expected* confidence. Expected confidence is the confidence divided by the frequency of B. The higher the lift, the stronger the association
+
+tl;dr How much our confidence has increased that B will be purchased given that A was purchased.
 
 ## Installing
 1. Download all files and put them in the same folder
@@ -55,6 +61,14 @@ Modifies the support for the tables.
 
 ![](GIFFolder/GIFGroupedSupp.gif)
 
+Authors:
+- Farrell Nathaniel (01082170002)
+- Ferinzhy Halik
+- Grand Marcell (01082170016
+
 References:
-[***Black Friday Examined (EDA + Apriori)***](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
+[Black Friday Examined (EDA + Apriori)](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
+[Association of rule learning](https://en.wikipedia.org/wiki/Association_rule_learning)
+[Explanation of Market Basket Model](https://infocenter.informationbuilders.com/wf80/index.jsp?topic=%2Fpubdocs%2FRStat16%2Fsource%2Ftopic49.htm)
+[Association rules](https://www.solver.com/xlminer/help/association-rules)
 
