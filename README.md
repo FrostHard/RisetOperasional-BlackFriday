@@ -67,8 +67,8 @@ Authors:
 - Grand Marcell (01082170016)
 
 References:
-[Black Friday Examined (EDA + Apriori)](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook)
-[Association of rule learning](https://en.wikipedia.org/wiki/Association_rule_learning)
-[Explanation of Market Basket Model](https://infocenter.informationbuilders.com/wf80/index.jsp?topic=%2Fpubdocs%2FRStat16%2Fsource%2Ftopic49.htm)
-[Association rules](https://www.solver.com/xlminer/help/association-rules)
+[Black Friday Examined (EDA + Apriori)](https://www.kaggle.com/dabate/black-friday-examined-eda-apriori/notebook) 
+[Association of rule learning](https://en.wikipedia.org/wiki/Association_rule_learning)  
+[Explanation of Market Basket Model](https://infocenter.informationbuilders.com/wf80/index.jsp?topic=%2Fpubdocs%2FRStat16%2Fsource%2Ftopic49.htm)  
+[Association rules](https://www.solver.com/xlminer/help/association-rules)  
 
