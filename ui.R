@@ -62,11 +62,7 @@ ui <- fluidPage(
                        selectInput("ProCatGen", "Which Category",
                                    choices = c("Category 1", "Category 2", "Category 3"))
       ),
-      conditionalPanel(condition ="input.Plot == 'Stay in City'",
-                       # Input : select input the type
-                       selectInput("StayCity", "Which Category",
-                                   choices = c("All", "City A", "City B", "City C"))
-      )
+      
     ),
     # Main panel for displaying outputs ----
     mainPanel(# Output: Histogram ----
